@@ -6,10 +6,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('BOT-TOKEN')
+bot = telebot.TeleBot('8608734845:AAFrOxUGwSw9556c9yAE0e4B8yufD6nY3zg')
 
 # Admin user IDs
-admin_id = ["YOUR-UID"]
+admin_id = ["8550636763"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -36,7 +36,7 @@ def read_free_users():
                     user_info = line.split()
                     if len(user_info) == 2:
                         user_id, credits = user_info
-                        free_user_credits[user_id] = int(credits)
+                        free_user_credits[8550636763] = int(credits)
                     else:
                         print(f"Ignoring invalid line in free user file: {line}")
     except FileNotFoundError:
